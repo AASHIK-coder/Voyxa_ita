@@ -1,50 +1,3 @@
-### Big update coming soon! 👀
-
-# Welcome to AlwaysReddy 🔊
-Hey, I'm Josh, the creator of AlwaysReddy. I am still a little bit of a noob when it comes to programming and I'm really trying to develop my skills over the next year, I'm treating this project as an attempt to better develop my skills, with that in mind I would really appreciate it if you could point out issues and bad practices in my code (of which I'm sure there will be plenty). I would also appreciate if you would make your own improvements to the project so I can learn from your changes. Twitter: https://twitter.com/MindofMachine1
-
-Contact me: joshlikesai@gmail.com
-
-**I'm looking for work, if you know of anyone needing a skillset like mine, please let me know! :)** 
-## Sections
-- [Meet AlwaysReddy](#meet-alwaysreddy)
-- [Setup](#setup)
-- [Known Issues](#known-issues)
-- [How to add custom actions](#custom-actions)
-- [Troubleshooting](#troubleshooting)
-- [How to](#how-to)
-- [Supported LLM servers](#supported-llm-servers)
-- [Supported TTS systems](#supported-tts-systems)
-
-## Meet AlwaysReddy 
-AlwaysReddy is a simple LLM assistant with the perfect amount of UI... None!
-You interact with it entirely using hotkeys, it can easily read from or write to your clipboard.
-It's like having voice ChatGPT running on your computer at all times, you just press a hotkey and it will listen to any questions you have, no need to swap windows or tabs, and if you want to give it context of some extra text, just copy the text and double tap the hotkey! 
-
-**Pull Requests Welcome!**
-
-Join the discord: https://discord.gg/su44drSBzb
-
-**Here is a demo video of me using it with Llama3** https://www.reddit.com/r/LocalLLaMA/comments/1ca510h/voice_chatting_with_llama_3_8b/
-
-### Features:
-You interact with AlwaysReddy entirely with hotkeys, it has the ability to:
-- Voice chat with you via TTS and STT
-- Read from your clipboard (with `Ctrl + Alt + R + R` rapidly double tapping R).
-- Write text to your clipboard on request.
-- Can be run 100% locally!!!
-- Supports Windows, Mac (experimental), linux (super duper experimental, see [Known Issues](#known-issues))
-
-### Are you a linux wizard?
-If you are and you're willing to help please consider look at the [Known Issues](#known-issues), I'm pretty stuck here!
-
-### Use cases:
-I often use AlwaysReddy for the following things:
-- When I have just learned a new concept I will often explain the concept aloud to AlwaysReddy and have it save the concept (in roughly my words) into a note.
-- "What is X called?" Often I know how to roughly describe something but cant remember what it is called, AlwaysReddy is handy for quickly giving me the answer without me having to open the browser.
-- "Can you proof read the text in my clipboard before I send it?"
-- "What do the r/LocalLLaMA users think of X, based on the comments in my clipboard?"
-- Quick journal entries, I speedily list what I have done today and get it to write a journal entry to my clipboard before I shutdown the computer for the day.
 
 ## Supported LLM servers:
 - OpenAI
@@ -115,13 +68,13 @@ If you encounter any issues during the setup process, please refer to the [Troub
 
 ## How to Run
 ### Running on Windows:
-- Double-click on the `run_AlwaysReddy.bat` file created during the setup process.
+- Double-click on the `run_Voyxa.bat` file created during the setup process.
 
 OR run `python main.py` from the command prompt or terminal.
 - Activate the venv `venv\Scripts\activate` then run the main script directly `python main.py`.
 
 ### Running on macOS and Linux:
-- Open a terminal, navigate to the AlwaysReddy directory, and run `./run_AlwaysReddy.sh`.
+- Open a terminal, navigate to the AlwaysReddy directory, and run `./run_Voyxa.sh`.
 
 OR run `python3 main.py` from the command prompt or terminal.
 - Activate the venv `source venv/bin/activate` then run the main script directly `python3 main.py`.
@@ -135,7 +88,7 @@ If you have issues try deleting the venv folder and starting again.
 Set VERBOSE = True in the config to get more detailed logs and error traces
 
 ## How to:
-### How to use AlwaysReddy:
+### How to use:
 There are currently only main 2 actions:
 
 Voice chat:
@@ -225,7 +178,7 @@ To use local TTS just open the config file and set `TTS_ENGINE="piper"`
 4. Edit your config.py file by setting the `ACTIVE_PROMPT` option to the name of your new prompt file (without the .py extension) as a string.
    - For example, if your new prompt file is *custom_prompt.py*, then set in config.py: `ACTIVE_PROMPT = "custom_prompt"`
 
-## How to add AlwaysReddy to Startup List (Windows)
+## How to add to Startup List (Windows)
 To add AlwaysReddy to your startup list so it starts automatically on your computer startup, follow these steps:
 1. run `venv\Scripts\activate`
 2. Run `python setup.py`, follow the prompts, it will ask you if you want to add AlwaysReddy to the startup list, press Y the confrim
