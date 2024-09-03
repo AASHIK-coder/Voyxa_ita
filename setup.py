@@ -115,7 +115,7 @@ def copy_file(src, dest):
 
 def create_run_files():
     if is_windows():
-        with open('run_AlwaysReddy.bat', 'w') as f:
+        with open('run_Voyxa.bat', 'w') as f:
             f.write('@echo off\n')
             f.write('cd /d "%~dp0"\n')
             f.write('call venv\\Scripts\\activate.bat\n')
@@ -127,14 +127,14 @@ def create_run_files():
             f.write('#!/bin/bash\n')
             f.write('source venv/bin/activate\n')
             f.write('python3 main.py\n')
-        os.chmod('run_AlwaysReddy.sh', 0o755)
+        os.chmod('run_Voyxa.sh', 0o755)
         print("[+] Created run file for Linux/macOS")
 
 def add_to_startup(run_file):
     if is_windows():
-        confirm = input("[?] Are you sure you want to add AlwaysReddy to startup? (y/n): ")
+        confirm = input("[?] Are you sure you want to add Voyxa to startup? (y/n): ")
         if confirm.lower() != 'y':
-            print("[!] Skipping adding AlwaysReddy to startup.")
+            print("[!] Skipping adding Voyxa to startup.")
             return False
 
         startup_dir = os.path.join(os.path.expanduser("~"), "AppData", "Roaming", "Microsoft", "Windows", "Start Menu", "Programs", "Startup")
@@ -152,7 +152,7 @@ def add_to_startup(run_file):
         return False
 
 def main():
-    print("===== AlwaysReddy Setup =====")
+    print("===== Voyxa Setup =====")
     print()
 
     if os.path.isdir('venv'):

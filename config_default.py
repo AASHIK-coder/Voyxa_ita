@@ -17,10 +17,10 @@ TRANSCRIBE_RECORDING = "ctrl+alt+t"
 ### LOCAL OPTIONS ###
 
 ## OLLAMA COMPLETIONS API EXAMPLE ##
-# COMPLETIONS_API = "ollama"
-# COMPLETION_MODEL = "llama3"
-# OLLAMA_API_BASE_URL = "http://localhost:11434" #This should be the defualt
-# OLLAMA_KEEP_ALIVE = "5m" # The duration that models stay loaded in memory (default "5m"). Set to "-1" to keep models loaded indefinitely
+##COMPLETIONS_API = "ollama"
+##COMPLETION_MODEL = "llama3.1"
+##OLLAMA_API_BASE_URL = "http://localhost:11434" #This should be the defualt
+##OLLAMA_KEEP_ALIVE = "5m" # The duration that models stay loaded in memory (default "5m"). Set to "-1" to keep models loaded indefinitely
 
 ## LM Studio COMPLETIONS API EXAMPLE ##
 # COMPLETIONS_API = "lm_studio" 
@@ -40,7 +40,7 @@ TRANSCRIBE_RECORDING = "ctrl+alt+t"
 
 ## OPENAI COMPLETIONS API EXAMPLE ##
 COMPLETIONS_API = "openai"
-COMPLETION_MODEL = "gpt-4o"
+COMPLETION_MODEL = "gpt-3.5-turbo"
 
 ## PERPLEXITY COMPLETIONS API EXAMPLE ##
 # COMPLETIONS_API = "perplexity"
@@ -58,7 +58,7 @@ COMPLETION_MODEL = "gpt-4o"
 
 ## Faster Whisper local transcription ###
 TRANSCRIPTION_API = "FasterWhisper" # this will use the local whisper model
-WHISPER_MODEL = "tiny.en" # If you prefer not to use english set it to "tiny", if the transcription quality is too low then set it to "base" but this will be a little slower
+WHISPER_MODEL = "medium" # If you prefer not to use english set it to "tiny", if the transcription quality is too low then set it to "base" but this will be a little slower
 BEAM_SIZE = 5
 
 
